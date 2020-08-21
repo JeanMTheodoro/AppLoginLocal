@@ -23,4 +23,9 @@
 
     <string name="file_usuario">loginlocal.usuarios</string>
     <string name="key_usuarios_db">USERS</string>
+
+    <string name="confirme_senha">Confirme a senha</string>
+    <string name="salvar">Salvar</string>
+    <string name="erro_confirma_senha">Senha e confirmação não conferem.</string>
+    <string name="erro_recupera_lista">Erro ao recuperar lista de usuários cadastrados.</string>
 </resources>

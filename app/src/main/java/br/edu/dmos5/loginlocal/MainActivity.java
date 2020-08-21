@@ -13,7 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private SharedPreferences mSharedPreferences;
     private SharedPreferences.Editor mEditor;
@@ -108,6 +108,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             abrirBoasVindas();
             return;
         }
+        if (view == novoUsuarioTextView) {
+            Intent in = new Intent(this, NovoUsuarioActivity.class);
+            startActivity(in);
+            return;
+        }
     }
 
     private void abrirBoasVindas() {
@@ -140,6 +145,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
     }
+
     private void verificarPreferencias() {
         usuario = mSharedPreferences.getString(getString(R.string.key_usuario), "");
         senha = mSharedPreferences.getString(getString(R.string.key_senha), "");
